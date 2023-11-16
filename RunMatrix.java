@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class RunMatrix {
   public static void main(String[] args) {
-    int size, x1,x2,y1,y2;//declaring variable
+    int size;//declaring variable
     Scanner scan = new Scanner(System.in);
 
     System.out.println("Please enter the size of your matrix"
