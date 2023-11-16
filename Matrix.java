@@ -16,6 +16,21 @@ public class Matrix {
     matrix[x1][y2] = matrix[x2][y2];
     matrix[x2][y2]= reorder;
   }
-
+//prints the default matrix
+public void printMatrix(){
+  final int ANSI_BOLDYELLOW = "001B[1;33m";//Alters text color of output
+  final int ANSI_COLORRESET = "001B[0m";
+ for (int row = 0; row<size; row++){
+   for(int column = 0; column<size; column++){
+     if (row + column == size-1){
+       System.out.print(ANSI_BOLDYELLOW+matrix[row][column]
+       +ANSI_COLORRESET+ "\t");//highlights the points on the diaganol
+     } else {
+       System.out.print(matrix[row][column]+ "\t");//returns without highlight
+     }
+   }
+   System.out.println();
+ }
+}
 
 }
