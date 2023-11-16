@@ -41,4 +41,16 @@ public void populateMatrix(){
     }
   }
 }
+
+public void flipMatrix(){
+  for (int row=0; row<size/2;row++){
+    for(int column=0; column<size; column++){
+      if (row+column != size-1){
+        swap(row,column,size-1-row,size-1-column);
+      }
+    }
+  }
+}
+}
+
 }
